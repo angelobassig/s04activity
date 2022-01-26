@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Zuitt IT Solutions</h1>
+			<h2>Products Offered</h2>
+		</header>
+
+		<section>
+			<table border="1">
+				<thead>
+					<tr>
+						<td><strong>Package</strong></td>
+						<th>Price</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Basic</td>
+						<td>&#8369; 500.00</td>
+						<td>Package includes a fully functional website with desired specifications.</td>
+					</tr>
+					
+					<tr>
+						<td>Premium</td>
+						<td>&#8369; 1000.00</td>
+						<td>Enjoy all the benefits of the basic package and also includes site support and maintenance</td>
+					</tr>
+				</tbody>
+
+				<tfoot>
+					<tr align="center">
+						<td colspan="3">
+							<strong>Additional features after initial project is inclusive of charges</strong>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+
+		<section>
+			<form action="">
+				<h2>Contact Form</h1>
+
+				<label for="firstName">First Name:</label>
+				<br>
+				<input id="firstName" type="text" name="first_name" required autocomplete="on">
+				<br>
+				<label for="lastName">Last Name:</label>
+				<br>
+				<input id="lastName" type="text" name="last_name" required autocomplete="on">
+				<br>
+				<label for="email">Email:</label>
+				<br>
+				<input id="email" type="email" name="email" required autocomplete="on">
+				<br>
+				<label for="contactNumber">Contact Number:</label>
+				<br>
+				<input id="contactNumber" type="number" name="contact_number" required autocomplete="on">
+				<br>
+				<label for="serviceType">Service Type:</label>
+				<br>
+				<select id="serviceType">
+					<option value="">Front End Programming</option>
+					<option value="">Back End Programming</option>
+					<option value="">Full Stack Programming</option>
+				</select>
+				<br>
+				<span>Preferred Contact:</span>
+				<br>
+				<input id="emailChkBox" type="checkbox" name="email_chk_box">
+				<label for="emailChkBox">Email</label>
+				<br>
+				<input id="phonePackageChkBox" type="checkbox" name="phone_package_chk_box">
+				<label for="phonePackageChkBox">Phone Package:</label>
+				<br>
+				<input id="basicChkBox" type="checkbox" name="basic_chk_box">
+				<label for="basicChkBox">Basic</label>
+				<br>
+				<input id="premiumChkBox" type="checkbox" name="premium_chk_box">
+				<label for="premiumChkBox">Premium</label>
+				<br>
+				<br>
+				<label for="textarea">Message</label>
+				<br>
+				<textarea id="textarea" cols="20" rows="5" required></textarea>
+				<br>
+				<button type="submit">Send inquiry</button>
+				<br>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</body>
+</html>

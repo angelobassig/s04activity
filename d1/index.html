@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Tables and Forms</title>
+</head>
+<body>
+	<h2>HTML Tables</h2>
+
+<!-- Table Schedule -->
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Hi, I'm your first cell</th>
+				<th>Second cell</th>
+				<th>Third cell</th>
+				<th>Fourth cell</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th>2nd row, cell 1</th>
+				<td>2nd row, cell 2</td>
+				<td>2nd row, cell 3</td>
+				<td>2nd row, cell 4</td>			
+			</tr>
+			<tr>
+				<td colspan="2">Ichika Nakano</td>
+				<td colspan>Ichika Nakano</td>
+				<td colspan>Ichika Nakano</td>
+			</tr>
+			<tr>
+				<td>Miku Nakano</td>
+				<td rowspan="2">Miku Nakano</td>
+				<td>Miku Nakano</td>
+				<td>Miku Nakano</td>
+			</tr>
+			<tr>
+				<td>Miku Nakano 1</td>
+				<td>Miku Nakano 2</td>
+				<td>Miku Nakano 3</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			
+		</tfoot>
+	</table>
+
+	<table border="1">
+		<thead>
+			<tr>
+			<th></th>
+			<th>9am</th>
+			<th>10am</th>
+			<th>11am</th>
+			<th>12am</th>
+		</tr>
+		</thead>
+
+		<tbody>
+			<th>Monday</th>
+			<td colspan="2">geography</td>
+			<td>math</td>
+			<td rowspan="2">art</td>
+		<tr>
+			<th>Tuesday</th>
+			<td colspan="3">Gym</td>
+		</tr>
+		</tbody>
+		
+		<tfoot></tfoot>
+			
+	</table>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Entity</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>data</td>
+			</tr>
+			<tr>
+				<td>&#8369;</td>
+				<td>peso sign</td>
+			</tr>
+			<tr>
+				<td>&amp;</td>
+				<td>ampersand</td>
+			</tr>
+
+			<tr>
+				<td>&quot;</td>
+				<td>double quotation mark</td>
+			</tr>
+
+			<tr>
+				<td>&apos;</td>
+				<td>single quotation mark</td>
+			</tr>
+
+			<tr>
+				<td>&ntilde;</td>
+				<td>Lower Tilde</td>
+			</tr>
+
+			<tr>
+				<td>&Ntilde;</td>
+				<td>Upper Tilde</td>
+			</tr>
+
+			<tr>
+				<td>&copy;</td>
+				<td>copyright</td>
+			</tr>
+		</tbody>
+
+
+
+	</table>
+
+	<p>
+		<em>Input elements that make up a form</em>
+	</p>
+
+	<!-- create an html form to capture user input -->
+
+	<!-- action attribute is used to define where the info will be sent -->
+	<form action="https://google.com">
+
+		<label for="fullname">Full Name:</label>
+		<br>
+		<label for="fullname">Full Name 2:</label>
+		<br>
+		<!-- input - it captures user input -->
+		<input id="fullname" type="text" name=""/ required autocomplete>
+
+		<br>
+
+		<label for="birth_date">Birth Date:</label>
+		<input type="date" name="birth_date" id="birth_date">
+
+
+		<button type="submit">Submit</button>
+		<button type="reset">Reset</button>
+
+		<label for="age"></label>
+		<input type="number" name="age" id="age"/>
+
+		<label for="gender">Gender</label>
+
+		<select name="gender" id="gender">
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+
+		<label for="notes">Notes:</label>
+		<textarea name="notes" id="notes" rows="10" cols="25" style="resize:none"></textarea>
+	</form>
+</body>
+</html>
